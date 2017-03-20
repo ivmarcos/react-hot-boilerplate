@@ -12,9 +12,21 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
+
+app.use(express.static(path.join(__dirname, config.output.publicPath)));
+
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+
+// app.use((req, res, next) => {
+//     console.log('req.path', req.path);
+//     const file = path.join(__dirname, 'public', req.path);
+//     console.log('file', file);
+//     res.sendFile(file);
+//     //next();
+// })
 
 app.listen(3000, function(err) {
   if (err) {
