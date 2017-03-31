@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
-    "version": "yarn version --new-version patch",
     "preversion": "git commit -am 'release' && echo 'release'",
     "postversion": "git push "
   },
