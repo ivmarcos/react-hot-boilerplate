@@ -7,7 +7,6 @@
     "start": "node server.js",
     "lint": "eslint src",
     "preversion": "git commit -am 'release' && echo 'release'",
-    "version": "git commit -am 'release' && add -all",
     "postversion" : "git push "
   },
   "repository": {
