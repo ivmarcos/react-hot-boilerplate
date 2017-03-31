@@ -5,7 +5,10 @@
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "preversion": "git commit -am 'release' && echo 'release'",
+    "version": "git commit -am 'release' && add -all",
+    "postversion" : "git push "
   },
   "repository": {
     "type": "git",
