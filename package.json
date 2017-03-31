@@ -1,7 +1,7 @@
 {
   "name": "react-hot-boilerplate",
-  "private" : true,
-  "version": "1.0.0",
+  "private": true,
+  "version": "1.1.0",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
     "start": "node server.js",
